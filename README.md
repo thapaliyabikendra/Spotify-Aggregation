@@ -4,25 +4,25 @@ Simple restapi to get most popular songs according to year, popular songs by art
 
 ### Get popular song by year
 ```bash
-GET songs/{year}
+GET songs/year/{year}
 ```
 ### Get popular song by artist
 ```bash
-GET songs/{artist}
+GET songs/artist/{artist}
 ```
 ### Get popular artist by genre
 ```bash
-GET songartists/{genre}
+GET artists/{genre}
 ```
 ### Get popular song by year per page
 ```bash
-GET songs/{year}?page={pageno}&size={size}
+GET songs/year/{year}?page={pageno}&size={size}
 ```
 ### Get popular song by artist per page
 ```bash
-GET songs/{artist}?page={pageno}&size={size}
+GET songs/artist/{artist}?page={pageno}&size={size}
 ```
 ### Get popular artist by genre per page
 ```bash
-GET songartists/{genre}?page={pageno}&size={size}
+GET artists/{genre}?page={pageno}&size={size}
 ```

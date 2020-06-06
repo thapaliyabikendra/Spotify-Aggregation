@@ -14,11 +14,11 @@ artist = Artist()
 def say_hello():
     return {"Welcome":"Spotify Aggergation"}
 
-@app.get("/songs/{artist}")
+@app.get("/songs/artist/{artist}")
 def get_songs_by_artist(artist:str, page:int = 0, size:int=1):
     return song.songs_by_artist(artist)[page*size:(page+1)*size]
 
-@app.get("/songs/{year}")
+@app.get("/songs/year/{year}")
 def get_songs_by_year(year:int, page:int = 0, size:int=1):
     return song.songs_by_year(year)[page*size:(page+1)*size]
 
