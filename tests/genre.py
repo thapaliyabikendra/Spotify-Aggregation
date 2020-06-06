@@ -9,7 +9,7 @@ class Genre():
         self.load_data()
         self.sort_by_popularity()
 
-    def load_data(self, filename="../data/data_by_genres.csv"):
+    def load_data(self, filename="data/data_by_genres.csv"):
         self.data = pd.read_csv(filename)
 
     def sort_by_popularity(self):

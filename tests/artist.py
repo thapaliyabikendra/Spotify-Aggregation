@@ -10,7 +10,7 @@ class Artist(Spotify):
         self.load_data()
         self.cast_to_list()
 
-    def load_data(self, filename="../data/data_w_genres.csv"):
+    def load_data(self, filename="data/data_w_genres.csv"):
         self.data = pd.read_csv(filename)
 
     def cast_to_list(self):

@@ -11,7 +11,7 @@ class Song(Spotify):
         self.load_data()
         self.cast_to_list()
 
-    def load_data(self, filename="../data/data.csv"):
+    def load_data(self, filename="data/data.csv"):
         self.data = pd.read_csv(filename, parse_dates=['year'], index_col='year')
 
     def cast_to_list(self):
