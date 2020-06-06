@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 import uvicorn
-from song import Song
-from artist import Artist
+from .song import Song
+from .artist import Artist
 
 # init
 app = FastAPI(debug=True)
