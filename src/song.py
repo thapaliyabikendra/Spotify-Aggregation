@@ -24,7 +24,7 @@ class Song(Spotify):
         return False
 
     def sort_by_popularity(self, filtered_data):
-        return filtered_data.sort_values('popularity').reset_index(drop=True)
+        return filtered_data.sort_values('popularity', ascending=False).reset_index(drop=True)
     
     def to_json(self, sorted_data):
         return json.loads(sorted_data.to_json(orient='records'))

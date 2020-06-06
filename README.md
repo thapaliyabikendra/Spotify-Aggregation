@@ -14,6 +14,10 @@ GET songs/artist/{artist}
 ```bash
 GET artists/{genre}
 ```
+### Get popular genres
+```bash
+GET genres
+```
 ### Get popular song by year per page
 ```bash
 GET songs/year/{year}?page={pageno}&size={size}
@@ -25,4 +29,8 @@ GET songs/artist/{artist}?page={pageno}&size={size}
 ### Get popular artist by genre per page
 ```bash
 GET artists/{genre}?page={pageno}&size={size}
+```
+### Get popular genres per page
+```bash
+GET genres?page={pageno}&size={size}
 ```
