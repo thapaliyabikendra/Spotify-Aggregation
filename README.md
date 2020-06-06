@@ -1,6 +1,6 @@
 # Spotify-Aggregation
 
-Simple restapi to get most popular songs according to year, popular songs by artist and popular artist with genre.
+Simple FastAPI to get most popular songs according to year, popular songs by artist and popular artist with genre.
 
 ### Get popular song by year
 ```bash
